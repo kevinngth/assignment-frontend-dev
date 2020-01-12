@@ -35,7 +35,7 @@ see something like this:
 ![Cart Popup](cart-popup.png)
 
 We would like you to start the dummy app in this repo and make sure that the
-cart icon of that dummt app looks as close as possible to the original at
+cart icon of that dummy app looks as close as possible to the original at
 theartling.com.
 
 To start the dummy app, please clone your fork of this repo to your disk, then
@@ -69,7 +69,7 @@ Here are some things you need to worry about:
 
 1. We would like to see clean HTML and CSS.
 1. You will see that we are using `emotion` to style our components. As a rule
-   of thump, if you only want to add one or two css styles, you may just use
+   of thumb, if you only want to add one or two css styles, you may just use
    the `style={{...}}` prop on the `<div>`, but if you need to add more styles
    create a `const Whatever = styled.div(props => ({...}))` component. You can
    find many examples of this in this codebase. If you have trouble
