@@ -42,7 +42,7 @@ const CartIcon = () => {
         <IconCart />
         <BadgeRound>2</BadgeRound>
       </div>
-      <Popover isVisible={isActive} onClose={() => setIsActive(false)}>
+      <Popover isVisible={true} /*isVisible={isActive}*/ onClose={() => setIsActive(false)}>
         Remove this text
         {/* 
             Tip: .map() over the DUMMY_DATA here and mount <CartItem data={item} /> components 
