@@ -38,7 +38,7 @@ const CartIcon = () => {
 
   return (
     <CartIconContainer>
-      <div onClick={() => setIsActive(!isActive)}>
+      <div style={{position: "relative"}} onClick={() => setIsActive(!isActive)}>
         <IconCart />
         <BadgeRound>2</BadgeRound>
       </div>
