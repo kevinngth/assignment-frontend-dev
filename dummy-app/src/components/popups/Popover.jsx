@@ -8,6 +8,9 @@ const PopoverContainer = styled.div(props => ({
   // tip: you can assume that the parent component of this component uses
   // `position: relative` (and you can see that `CartIconContainer` in
   // `CartIcon.jsx` indeed uses `position: relative`)
+  position: "absolute",
+  top: "-1rem",
+  right: "-1rem"
 }));
 
 const ContentContainer = styled.div(props => ({

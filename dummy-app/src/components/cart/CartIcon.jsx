@@ -32,6 +32,13 @@ const CartIconContainer = styled.div(props => ({
   position: "relative"
 }));
 
+const PopoverHeader = styled.div(props => ({
+  textAlign: "center",
+  borderBottom: "1px solid rgb(200, 175, 106)",
+  padding: "1rem",
+  marginBottom: "1rem"
+}));
+
 const CartIcon = () => {
   // this is a React hook. If you don't know about hooks yet, don't worry about
   // this.
@@ -44,7 +51,7 @@ const CartIcon = () => {
         <BadgeRound>2</BadgeRound>
       </div>
       <Popover isVisible={true} /*isVisible={isActive}*/ onClose={() => setIsActive(false)}>
-        <p style={{textAlign: "center", borderBottom: "1px solid rgb(200, 175, 106)", paddingBottom: "1rem"}}>{DUMMY_DATA.length} items in your cart</p>
+        <PopoverHeader>{DUMMY_DATA.length} items in your cart</PopoverHeader>
         {DUMMY_DATA.map( item => <CartItem key={item.title} data={item} /> )}
         <div style={{display: "flex", justifyContent: "space-between"}}>
           <span>Subtotal</span>
