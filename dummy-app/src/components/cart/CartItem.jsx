@@ -5,7 +5,8 @@ const CartItemContainer = styled.div(props => ({
   display: "flex",
   paddingBottom: "1rem",
   marginBottom: "1rem",
-  borderBottom: "1px solid rgba(0,0,0,.1)"
+  borderBottom: "1px solid rgba(0,0,0,.1)",
+  cursor: "pointer"
 }));
 
 const CartItem = props => {

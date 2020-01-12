@@ -8,7 +8,9 @@ const Button = styled.div(props => ({
   color: "white",
   fontSize: "10pt",
   padding: "1em",
-  marginTop: "1rem"
+  marginTop: "1rem",
+  cursor: "pointer",
+  [`:hover`]: {opacity: .8}
 }));
 
 export default Button;
