@@ -5,6 +5,7 @@ import BadgeRound from "../badges/BadgeRound";
 import CartItem from "./CartItem";
 import IconCart from "../svg/IconCart";
 import Popover from "../popups/Popover";
+import Button from "../buttons/Button";
 
 // normally this data would come from our API
 // in this assignment, we will assume that these two items are in the cart
@@ -43,7 +44,13 @@ const CartIcon = () => {
         <BadgeRound>2</BadgeRound>
       </div>
       <Popover isVisible={true} /*isVisible={isActive}*/ onClose={() => setIsActive(false)}>
+        <p style={{textAlign: "center", borderBottom: "1px solid rgb(200, 175, 106)", paddingBottom: "1rem"}}>{DUMMY_DATA.length} items in your cart</p>
         {DUMMY_DATA.map( item => <CartItem key={item.title} data={item} /> )}
+        <div style={{display: "flex", justifyContent: "space-between"}}>
+          <span>Subtotal</span>
+          <span>S$ 3,380</span>
+        </div>
+        <Button>GO TO CART</Button>
       </Popover>
     </CartIconContainer>
   );
