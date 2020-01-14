@@ -2,7 +2,7 @@ export function paginator(currentPage, totalPages) {
   let pages = [];
   // your code here, have fun!
   let page = currentPage - 2;
-  if (currentPage <= 3) {
+  if (currentPage <= 3 || totalPages <= 5) {
     page = 1
   } else if (totalPages - currentPage < 3) {
     page = totalPages - 4
