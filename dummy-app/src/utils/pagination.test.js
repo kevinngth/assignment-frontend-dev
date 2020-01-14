@@ -52,3 +52,11 @@ test("when we are near the right edge of the range, pages end at the last page",
   result = paginator(10, 10);
   expect(result).toEqual([6, 7, 8, 9, 10]);
 });
+
+test("special case at page 4", () => {
+  let result = paginator(4, 4);
+  expect(result).toEqual([1, 2, 3, 4]);
+
+  result = paginator(4, 5);
+  expect(result).toEqual([1, 2, 3, 4, 5]);
+});
